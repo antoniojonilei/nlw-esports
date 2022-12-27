@@ -12,6 +12,9 @@ import dude from "./assets/img/dude.png"
 import ryoran from "./assets/img/ryoran.png"
 import vgbc from "./assets/img/vgbootcamp.png"
 
+import insta from "./assets/svgs/instagram.svg"
+import twitch from "./assets/svgs/twitch.svg"
+
 const gamesListData = [
   {
     url: "https://www.twitch.tv/directory/game/Splatoon%203",
@@ -40,7 +43,7 @@ const gamesListData = [
   }
 ]
 
-const chanelListData = [
+const channelListData = [
   {
     url: "https://www.twitch.tv/thatsrb2dude",
     imageUrl: dude,
@@ -58,6 +61,16 @@ const chanelListData = [
   }
 ]
 
+const socialListData = [
+  {
+    url: "https://www.instagram.com/jonileisilva/",
+    imageUrl: insta
+  },
+  {
+    url: "https://www.twitch.tv/jonileisilva",
+    imageUrl: twitch
+  }
+]
 
 function App() {
   return (
@@ -86,7 +99,7 @@ function App() {
           subtitle="Lista de canais e transmissões que não perco!"
         >
 
-          {chanelListData.map((item) => (
+          {channelListData.map((item) => (
             <ListItem 
             url={item.url} 
             imageUrl={item.imageUrl} 
@@ -96,8 +109,18 @@ function App() {
 
         </Section>
 
-        <Section>
-
+        <Section
+          title="Minhas Redes"
+          subtitle="Se conecte comigo!"
+          className="social-list"
+        >
+          {socialListData.map((item) => (
+            <ListItem 
+              url={item.url}
+              imageUrl={item.imageUrl}
+              
+            />
+          ))}
         </Section>
         
       </main>
