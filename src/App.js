@@ -64,11 +64,13 @@ const channelListData = [
 const socialListData = [
   {
     url: "https://www.instagram.com/jonileisilva/",
-    imageUrl: insta
+    imageUrl: insta,
+    alt: "logo instagram"
   },
   {
     url: "https://www.twitch.tv/jonileisilva",
-    imageUrl: twitch
+    imageUrl: twitch,
+    alt: "logo twitch"
   }
 ]
 
@@ -118,7 +120,7 @@ function App() {
             <ListItem 
               url={item.url}
               imageUrl={item.imageUrl}
-              
+              alt={item.alt}   
             />
           ))}
         </Section>
