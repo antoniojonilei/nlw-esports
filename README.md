@@ -1,6 +1,6 @@
 # nlw-esports
 
-<img src="../nlw-esports/src/assets/img/template.png">
+<img src="./src/assets/img/template.png">
 
 Projeto construído do evento Next Level Week da Rocketseat.
 
