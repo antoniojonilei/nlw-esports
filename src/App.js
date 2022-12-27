@@ -35,7 +35,7 @@ function App() {
     <div className="App">
       <Header />
       <main>
-        <Section title="Meus Jogos" subtitle="Os games que eu mais curto jogar!">
+        <Section title="Meus Jogos" subtitle="Os games que eu mais curto jogar com os amigos!">
 
           {gamesListData.map((item) => (
             <ListItem 
