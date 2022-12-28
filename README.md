@@ -1,4 +1,4 @@
-# nlw-esports
+# NLW-eSports
 
 <img src="./src/assets/img/template.png">
 
